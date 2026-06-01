@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private support
+    url: mailto:support@zex4u.com
+    about: For private support requests, account issues, billing questions, or anything that should not be public.
+
+  - name: Security vulnerability report
+    url: mailto:support@zex4u.com
+    about: Please do not report security vulnerabilities publicly. Email us privately instead.
