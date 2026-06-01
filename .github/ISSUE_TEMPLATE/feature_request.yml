@@ -1,0 +1,101 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Zex
+title: "[Feature]: "
+labels:
+  - feature-request
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement for Zex.
+
+        Please explain the problem first, then your suggested solution.
+
+        Do not include sensitive information such as passwords, API keys, phone numbers, email addresses, payment details, government IDs, access tokens, private logs, or personal user data.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve?
+      placeholder: Example: I want to quickly see recent fraud alerts near my city without opening the full map.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Suggested solution
+      description: What would you like Zex to add or improve?
+      placeholder: Example: Add a "Nearby Alerts" section on the home screen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Why this is useful
+      description: Explain who this helps and why it matters.
+      placeholder: Example: This helps users quickly understand nearby threats without extra navigation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Are there any workarounds or alternative solutions?
+      placeholder: Example: Currently I manually open the map and zoom into my location.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Product area
+      description: Which part of Zex is this related to?
+      options:
+        - Mobile app
+        - Web app
+        - Threat Map
+        - Fraud alerts
+        - News/feed
+        - Account/login
+        - Subscription/payment
+        - Notifications
+        - UI/UX
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Important
+        - Critical for my use case
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or references
+      description: Share examples from other apps or products if useful.
+      placeholder: Example: Similar to how some news apps show local alerts on the home screen.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues before creating this request.
+          required: true
+        - label: I have removed sensitive information from this issue.
+          required: true
