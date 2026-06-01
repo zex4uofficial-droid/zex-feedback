@@ -1,0 +1,147 @@
+name: Bug Report
+description: Report a reproducible bug or app issue in Zex
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in Zex.
+
+        Before submitting, please search existing issues to avoid duplicates.
+
+        Do not include sensitive information such as passwords, API keys, phone numbers, email addresses, payment details, government IDs, access tokens, private logs, or personal user data.
+
+        If this is a security vulnerability, do not open a public issue. Email us privately at support@zex4u.com.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the issue.
+      placeholder: Example: App crashes when opening the Threat Map screen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide clear steps so we can reproduce the issue.
+      placeholder: |
+        1. Open the Zex app
+        2. Go to Threat Map
+        3. Tap on any live threat marker
+        4. App crashes
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: Example: The threat detail page should open.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: Example: The app closed and returned to the home screen.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where did you experience the issue?
+      options:
+        - Android
+        - iOS
+        - Web
+        - Backend/API
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: Zex app version
+      description: Enter the app version if available.
+      placeholder: Example: 1.2.0
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Enter your device name/model if relevant.
+      placeholder: Example: Samsung Galaxy S23, iPhone 15, MacBook Pro
+    validations:
+      required: false
+
+  - type: input
+    id: os_version
+    attributes:
+      label: Operating system version
+      description: Enter your OS version if relevant.
+      placeholder: Example: Android 14, iOS 18, macOS 15, Windows 11
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Required only for web issues.
+      placeholder: Example: Chrome 126, Safari 17, Firefox 128
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recordings
+      description: Attach screenshots or recordings if they help. Please remove private information before uploading.
+      placeholder: Drag and drop files here, or paste screenshots.
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error messages
+      description: Paste only relevant logs. Remove tokens, emails, phone numbers, and private user data.
+      render: text
+      placeholder: Paste relevant error messages here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add anything else that may help us investigate.
+      placeholder: Example: This started after the latest update.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues before creating this report.
+          required: true
+        - label: I have removed sensitive information from this issue.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
