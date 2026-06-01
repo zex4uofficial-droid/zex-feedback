@@ -1,0 +1,90 @@
+name: General Feedback
+description: Share general feedback, questions, or suggestions about Zex
+title: "[Feedback]: "
+labels:
+  - feedback
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing feedback about Zex.
+
+        Use this form for general product feedback, questions, confusing behavior, documentation suggestions, or non-urgent comments.
+
+        Do not include sensitive information such as passwords, API keys, phone numbers, email addresses, payment details, government IDs, access tokens, private logs, or personal user data.
+
+        For private support, email support@zex4u.com.
+
+        For security vulnerabilities, do not open a public issue. Email us privately at support@zex4u.com.
+
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback type
+      description: What kind of feedback is this?
+      options:
+        - General feedback
+        - Question
+        - UI/UX feedback
+        - Documentation feedback
+        - Confusing behavior
+        - Product suggestion
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Tell us what you want to share.
+      placeholder: Example: The Threat Map is useful, but the marker colors are confusing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_improvement
+    attributes:
+      label: Suggested improvement
+      description: Optional. How do you think this can be improved?
+      placeholder: Example: Add a small legend explaining each marker color.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: product_area
+    attributes:
+      label: Product area
+      description: Which part of Zex is this related to?
+      options:
+        - Mobile app
+        - Web app
+        - Threat Map
+        - Fraud alerts
+        - News/feed
+        - Account/login
+        - Subscription/payment
+        - Notifications
+        - UI/UX
+        - Documentation
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or examples
+      description: Attach screenshots or examples if helpful. Please remove private information before uploading.
+      placeholder: Drag and drop files here, or paste screenshots.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have removed sensitive information from this issue.
+          required: true
