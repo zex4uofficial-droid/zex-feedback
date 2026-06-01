@@ -66,7 +66,9 @@ Security examples include:
 - Unauthorized access to user data
 - Vulnerability in encryption, storage, or backend logic
 
-Report security issues privately at:
+## Contact
+
+For support, private reports, or security concerns:
 
 ```text
 support@zex4u.com
